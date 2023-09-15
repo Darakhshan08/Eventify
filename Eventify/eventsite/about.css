@@ -1,0 +1,70 @@
+/* Base styles for the "dot" class */
+.dot {
+  font-family: Arial, sans-serif;
+  font-size: 50px;
+  color:#421387; /* Default text color */
+  text-align: center;
+  
+}
+
+/* Style the box-container */
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Style individual boxes */
+.box {
+  width: 30%; /* Adjust the width as needed */
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px; /* Adjust the radius as desired */
+ 
+}
+
+/* Style box images */
+.box img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Style box headings */
+.box h3 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/* Style box paragraphs */
+.box p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsive Media Queries */
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+  .box {
+      width: 45%; /* Adjust the width for smaller screens */
+  }
+}
+
+/* For screens smaller than 576px (e.g., smaller smartphones) */
+@media (max-width: 576px) {
+  .box {
+      width: 100%; /* Full width for smallest screens */
+  }
+
+  .dot {
+      font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .box h3 {
+      font-size: 16px; /* Adjust font size for smaller screens */
+ 
+  }
+}
